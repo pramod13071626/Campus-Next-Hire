@@ -1,0 +1,163 @@
+﻿@{
+    var companies = ViewBag.Companies as List<CampusCraft.Models.company> ?? new List<CampusCraft.Models.company>();
+    var admins = ViewBag.Admins as List<CampusCraft.Models.admin> ?? new List<CampusCraft.Models.admin>();
+    bool isAuthenticated = Request.IsAuthenticated; // Check if user is logged in
+}
+
+@{
+    ViewBag.Title = "comp_list";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            color: white;
+            font-size: 28px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 90%;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            }
+
+            .card h3 {
+                font-size: 22px;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .card p {
+                font-size: 16px;
+                color: #555;
+                margin: 5px 0;
+            }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+
+            .btn-secondary:hover {
+                background-color: #545b62;
+            }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+
+            .btn-danger:hover {
+                background-color: #bd2130;
+            }
+    </style>
+</head>
+<body>
+
+    <h2>Company List</h2>
+
+    <div class="card-container">
+        @foreach (var item in companies)
+        {
+            <div class="card">
+                <h3>@item.cmpname</h3>
+                <p><strong>Location:</strong> @item.location</p>
+                <p><strong>Job Requirements:</strong> @item.job_requirements</p>
+                <p><strong>Job Description:</strong> @item.job_description</p>
+
+                <a href="@Url.Action("Create", "students", new { id = item.compID })" class="btn btn-primary apply-link">Apply</a>
+
+                @if (admins.Count > 0)
+                {
+                    foreach (var admin in admins)
+                    {
+                        if (admin.email.ToLower() == User.Identity.Name.ToLower())
+                        {
+                            if (isAuthenticated)
+                            {
+                                <br />
+                                <a href="@Url.Action("Edit", "Placement_Cell", new { id = item.compID })" class="btn btn-secondary">Edit</a>
+                                <a href="@Url.Action("Delete", "Placement_Cell", new { id = item.compID })" class="btn btn-danger">Delete</a>
+                            }
+                        }
+                    }
+                }
+            </div>
+        }
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var applyLinks = document.querySelectorAll(".apply-link");
+
+            applyLinks.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    var isAuthenticated = @((isAuthenticated ? "true" : "false"));
+
+                    if (!isAuthenticated) {
+                        event.preventDefault(); // Prevent navigation
+                        alert("Please log in first to apply for this job.");
+                        window.location.href = "/Account/Login"; // Redirect to login page
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

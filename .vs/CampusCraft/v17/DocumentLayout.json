@@ -1,0 +1,347 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\models\\cc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:models\\cc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\migrations\\studentmodelmigrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:migrations\\studentmodelmigrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\models\\roles_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:models\\roles_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\views\\placement_cell\\placedstudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:views\\placement_cell\\placedstudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\controllers\\placement_cellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:controllers\\placement_cellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\views\\placement_cell\\placement_cell.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:views\\placement_cell\\placement_cell.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\views\\placement_cell\\appliedstudentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:views\\placement_cell\\appliedstudentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\models\\placed_student_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:models\\placed_student_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|c:\\users\\pramo\\documents\\ca\\extracted\\campuscraft\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF1450E-F71E-41CD-A0D3-D8DBB333F8DC}|CampusCraft.csproj|solutionrelative:models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 199,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:28:03.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CC.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Models\\CC.cs",
+              "RelativeDocumentMoniker": "Models\\CC.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Models\\CC.cs",
+              "RelativeToolTip": "Models\\CC.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwHcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:23:21.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "Migrations\\Configuration.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:22:41.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Migrations\\studentModelMigrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "Migrations\\studentModelMigrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Migrations\\studentModelMigrations\\Configuration.cs",
+              "RelativeToolTip": "Migrations\\studentModelMigrations\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:22:32.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "roles_tbl.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Models\\roles_tbl.cs",
+              "RelativeDocumentMoniker": "Models\\roles_tbl.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Models\\roles_tbl.cs",
+              "RelativeToolTip": "Models\\roles_tbl.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:19:06.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IdentityConfig.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\App_Start\\IdentityConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\IdentityConfig.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\App_Start\\IdentityConfig.cs",
+              "RelativeToolTip": "App_Start\\IdentityConfig.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:17:35.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "studentsController.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Controllers\\studentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\studentsController.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Controllers\\studentsController.cs",
+              "RelativeToolTip": "Controllers\\studentsController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAA/wBEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T06:52:16.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlacedStudents.cshtml",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\placement_cell\\PlacedStudents.cshtml",
+              "RelativeDocumentMoniker": "Views\\placement_cell\\PlacedStudents.cshtml",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\placement_cell\\PlacedStudents.cshtml",
+              "RelativeToolTip": "Views\\placement_cell\\PlacedStudents.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T06:31:40.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "placement_cell.cshtml",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\placement_cell\\placement_cell.cshtml",
+              "RelativeDocumentMoniker": "Views\\placement_cell\\placement_cell.cshtml",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\placement_cell\\placement_cell.cshtml",
+              "RelativeToolTip": "Views\\placement_cell\\placement_cell.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T06:26:58.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appliedStudentList.cshtml",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\placement_cell\\appliedStudentList.cshtml",
+              "RelativeDocumentMoniker": "Views\\placement_cell\\appliedStudentList.cshtml",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\placement_cell\\appliedStudentList.cshtml",
+              "RelativeToolTip": "Views\\placement_cell\\appliedStudentList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T05:37:03.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Placement_CellController.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Controllers\\Placement_CellController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Placement_CellController.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Controllers\\Placement_CellController.cs",
+              "RelativeToolTip": "Controllers\\Placement_CellController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAuwJUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:09:00.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T06:36:54.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAGoBAAAAAAAAAAAmwJwBAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T05:57:37.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "placed_student_list.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Models\\placed_student_list.cs",
+              "RelativeDocumentMoniker": "Models\\placed_student_list.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Models\\placed_student_list.cs",
+              "RelativeToolTip": "Models\\placed_student_list.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T06:49:26.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T05:06:03.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T05:58:33.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T05:57:33.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "company.cs",
+              "DocumentMoniker": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Models\\company.cs",
+              "RelativeDocumentMoniker": "Models\\company.cs",
+              "ToolTip": "C:\\Users\\pramo\\Documents\\CA\\extracted\\CampusCraft\\Models\\company.cs",
+              "RelativeToolTip": "Models\\company.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA4wBMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T05:55:13.774Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 174,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

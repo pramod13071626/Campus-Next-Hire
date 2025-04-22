@@ -1,0 +1,30 @@
+@model IEnumerable<CampusCraft.Models.placed_student_list>
+
+@{
+    ViewBag.Title = "Placed Students";
+}
+
+<h2>Placed Students</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Place ID</th>
+            <th>Student ID</th>
+            <th>Company ID</th>
+            <th>Company</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var placedStudent in Model)
+        {
+            <tr>
+                <td>@placedStudent.place_ID</td>
+                <td>@placedStudent.stdID</td>
+                <td>@placedStudent.compID</td>
+                <td>@placedStudent.company.cmpname</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

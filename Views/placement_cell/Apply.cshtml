@@ -1,0 +1,34 @@
+﻿@model CampusCraft.Models.appliedstudentlist
+
+@{
+    ViewBag.Title = "Apply for Job";
+}
+
+<h2>Apply for Job</h2>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+
+    <div>
+        <label>Student Name:</label>
+        <input type="text" value="@Model.student.name" readonly class="form-control" />
+    </div>
+
+    <div>
+        <label>Email:</label>
+        <input type="text" value="@Model.student.email" readonly class="form-control" />
+    </div>
+
+    <div>
+        <label>Company ID:</label>
+        <input type="text" value="@Model.companyinfo" readonly class="form-control" />
+    </div>
+
+    <div>
+        <label>Resume:</label>
+        <input type="file" name="resume" required class="form-control" />
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Submit Application</button>
+</form>

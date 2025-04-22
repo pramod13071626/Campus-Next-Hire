@@ -1,0 +1,33 @@
+﻿@model CampusCraft.Models.company
+@{
+    ViewBag.Title = "Edit Company";
+}
+
+<h2>Edit Company</h2>
+
+@using (Html.BeginForm("Edit", "Placement_Cell", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.compID)
+    <div>
+        @Html.LabelFor(m => m.cmpname)
+        @Html.TextBoxFor(m => m.cmpname)
+        @Html.ValidationMessageFor(m => m.cmpname)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.location)
+        @Html.TextBoxFor(m => m.location)
+        @Html.ValidationMessageFor(m => m.location)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.job_requirements)
+        @Html.TextBoxFor(m => m.job_requirements)
+        @Html.ValidationMessageFor(m => m.job_requirements)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.job_description)
+        @Html.TextAreaFor(m => m.job_description)
+        @Html.ValidationMessageFor(m => m.job_description)
+    </div>
+    <button type="submit">Save</button>
+}

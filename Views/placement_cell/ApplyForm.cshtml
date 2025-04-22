@@ -1,0 +1,60 @@
+﻿@model CampusCraft.Models.ApplyViewModel
+
+@{
+    ViewBag.Title = "Apply for Job";
+}
+
+<h2>Apply for @Model.CompanyName</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+@using (Html.BeginForm("ApplyForm", "Placement_Cell", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(model => model.StudentID)
+    @Html.HiddenFor(model => model.CompanyID)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @readonly = "readonly" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email)
+        @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @readonly = "readonly" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Course)
+        @Html.TextBoxFor(model => model.Course, new { @class = "form-control", @readonly = "readonly" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Year)
+        @Html.TextBoxFor(model => model.Year, new { @class = "form-control", @readonly = "readonly" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Mobile)
+        @Html.TextBoxFor(model => model.Mobile, new { @class = "form-control", @readonly = "readonly" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Resume (Current)")
+        <br />
+        @if (Model.Resume != null && Model.Resume.Length > 0)
+        {
+            <a href="@Url.Action("DownloadResume", "Placement_Cell", new { studentID = Model.StudentID })" class="btn btn-info">Download Resume</a>
+        }
+        else
+        {
+            <span>No resume uploaded</span>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Application</button>
+}

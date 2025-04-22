@@ -1,0 +1,98 @@
+﻿@using CampusCraft.Models
+
+@{
+    ViewBag.Title = "Applied Student List";
+
+    // Initialize Database Contexts
+    studentModel dbStudent = new studentModel();
+    comapnyModel dbCompany = new comapnyModel();
+    appliedStudentListModel dbAppliedStudent = new appliedStudentListModel();
+
+    // Fetch Data
+
+    var appliedstudent = dbAppliedStudent.appliedstudentlists.ToList();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+        }
+
+        .student-card {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            background-color: #fff;
+        }
+
+            .student-card:hover {
+                transform: translateY(-5px);
+            }
+
+        .student-img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .company-badge {
+            background: #0d6efd;
+            color: white;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Students & Their Applied Companies</h2>
+        <div class="row">
+            @if (appliedstudent.Any())
+            {
+                foreach (var item in appliedstudent)
+                {
+                    var student = dbStudent.students.FirstOrDefault(s => s.stdID == item.studentinfo);
+                    var company = dbCompany.companies.FirstOrDefault(c => c.compID == item.companyinfo);
+
+                    if (student != null && company != null)
+                    {
+                        <div class="col-md-4 mb-4">
+                            <div class="card student-card p-3">
+                                <div class="d-flex align-items-center">
+                                    @*<img src="https://via.placeholder.com/80" alt="Student" class="student-img me-3">*@
+                                    <div>
+                                        <h5 class="mb-1">@student.name</h5>
+                                        <p class="text-muted mb-0">@student.course - Year @student.year</p>
+                                        <p class="text-muted small">📧 @student.email</p>
+                                        <p class="text-muted small">📞 @student.mobile</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="mb-1"><strong>Applied to:</strong></p>
+                                <span class="company-badge">@company.cmpname - @company.location</span>
+                                <p class="mt-2 text-muted">@company.job_description</p>
+                            </div>
+                        </div>
+                    }
+                }
+            }
+            else
+            {
+                <p class="text-center text-muted">No applications found.</p>
+            }
+        </div>
+    </div>
+
+</body>
+</html>

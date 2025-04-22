@@ -1,0 +1,98 @@
+﻿@model IEnumerable<CampusCraft.Models.student>
+
+@{
+    ViewBag.Title = "Student List";
+    string currentUserEmail = User.Identity.Name;
+
+    // Check if the user is an admin
+    bool isAdmin = false;
+    using (var db = new CampusCraft.Models.adminModel())
+    {
+        var adminEmails = db.admins.Select(a => a.email).ToList();
+        isAdmin = adminEmails.Any(email => string.Equals(email, currentUserEmail, StringComparison.OrdinalIgnoreCase));
+    }
+}
+
+<div class="container">
+    <div class="card shadow-lg mt-5 p-4">
+        <h2 class="text-center text-primary">Student List</h2>
+        <hr />
+
+        <div class="text-end mb-3">
+            @Html.ActionLink("➕ Create New", "Create", null, new { @class = "btn btn-success btn-lg" })
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.name)</th>
+                        <th>@Html.DisplayNameFor(model => model.course)</th>
+                        <th>@Html.DisplayNameFor(model => model.year)</th>
+                        <th>@Html.DisplayNameFor(model => model.email)</th>
+                        <th>@Html.DisplayNameFor(model => model.mobile)</th>
+                        <th>@Html.DisplayNameFor(model => model.add_resume)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.name)</td>
+                            <td>@Html.DisplayFor(modelItem => item.course)</td>
+                            <td>@Html.DisplayFor(modelItem => item.year)</td>
+                            <td>@Html.DisplayFor(modelItem => item.email)</td>
+                            <td>@Html.DisplayFor(modelItem => item.mobile)</td>
+                            <td>@Html.DisplayFor(modelItem => item.add_resume)</td>
+                            <td>
+                                @if (string.Equals(item.email, currentUserEmail, StringComparison.OrdinalIgnoreCase) || isAdmin)
+                                {
+                                    <a href="@Url.Action("Edit", new { id = item.stdID })" class="btn btn-warning btn-sm">✏ Edit</a>
+                                    <a href="@Url.Action("Details", new { id = item.stdID })" class="btn btn-info btn-sm">📄 Details</a>
+                                    <a href="@Url.Action("Delete", new { id = item.stdID })" class="btn btn-danger btn-sm"
+                                       onclick="return confirm('Are you sure you want to remove this student?');">
+                                        ❌ Remove
+                                    </a>
+
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(to right, #87CEFA, #00BFFF);
+        font-family: 'Arial', sans-serif;
+    }
+
+    .card {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .table th {
+        text-align: center;
+    }
+
+    .table tbody tr:hover {
+        background-color: #f1f1f1;
+        transition: 0.3s ease-in-out;
+    }
+
+    .btn-sm {
+        margin: 3px;
+    }
+
+    .btn-success:hover {
+        background-color: #28a745;
+        transform: scale(1.05);
+    }
+</style>

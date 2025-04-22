@@ -1,0 +1,115 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Indira College Pune - Home</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Body and HTML full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-image: url('/wwwroot/images/1491907984phpyZAeD5.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Full-screen background image */
+        .container-fluid {
+            flex: 1;
+            position: relative;
+            text-align: center;
+        }
+
+        /* Main content section */
+        .main-content {
+            position: relative;
+            z-index: 1;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #f39c12; /* Set heading text color to a goldish tone */
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #16a085; /* Change color of the paragraph text to teal */
+        }
+
+        .btn-custom {
+            background-color: #ff9900;
+            border-color: #ff9900;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #2c3e50; /* Set button text color to dark gray */
+        }
+
+            .btn-custom:hover {
+                background-color: #e68a00;
+                border-color: #e68a00;
+            }
+
+        /* Footer */
+        .footer {
+            background-color: #222;
+            color: #bdc3c7; /* Set footer text color to light gray */
+            padding: 0px 0;
+            text-align: center;
+        }
+
+            .footer a {
+                color: #ff9900;
+                text-decoration: none;
+            }
+
+                .footer a:hover {
+                    color: #e68a00;
+                }
+    </style>
+</head>
+<body>
+
+    <!-- Full-screen background container -->
+    <div class="container-fluid">
+        <!-- Dark overlay -->
+        <div class="overlay"></div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <h1>Welcome to Indira College Pune</h1>
+            <p>Shaping the leaders of tomorrow with world-class education.</p>
+            <a href="@Url.Action("About", "Home")" class="btn btn-custom btn-lg">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 ICCS College Pune. All rights reserved. | <a href="@Url.Action("Contact", "Home")">Contact Us</a></p>
+    </div>
+
+    <!-- Optional Bootstrap JS (for components that need JavaScript) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

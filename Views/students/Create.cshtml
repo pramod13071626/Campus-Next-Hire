@@ -1,0 +1,118 @@
+﻿@model CampusCraft.Models.student
+
+@{
+    ViewBag.Title = "Create";
+    int routeId = ViewBag.RouteId ?? 0;
+}
+
+<div class="container">
+    <div class="card shadow-lg mt-5 p-4">
+        <h2 class="text-center text-primary">Create Student</h2>
+        <hr />
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-container">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                @Html.Hidden("RouteId", routeId)
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.stdID, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.stdID, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.stdID, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.name, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.course, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.course, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.course, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.year, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.year, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.year, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.email, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.mobile, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.mobile, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.mobile, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.add_resume, new { @class = "form-label" })
+                    @Html.EditorFor(model => model.add_resume, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.add_resume, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Apply</button>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="text-center mt-3">
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-outline-secondary" })
+    </div>
+</div>
+
+<style>
+    body {
+        /*        background: linear-gradient(to right, #87CEFA, #00BFFF);*/
+        background: linear-gradient(135deg, #74ebd5, #acb6e5);
+        font-family: 'Arial', sans-serif;
+    }
+
+    .card {
+        max-width: 500px;
+        margin: auto;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        transition: 0.3s ease-in-out;
+    }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+        }
+
+    .btn-primary {
+        transition: 0.3s;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+</style>

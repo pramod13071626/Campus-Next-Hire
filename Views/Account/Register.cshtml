@@ -1,0 +1,105 @@
+﻿@model CampusCraft.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<main aria-labelledby="title">
+    <div class="container py-5">
+        <h2 id="title" class="text-center text-light mb-4">@ViewBag.Title</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <section class="card p-4 shadow-lg custom-card">
+                    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <h4 class="text-center text-light mb-3">Create a new account.</h4>
+                        <hr />
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <div class="mb-4">
+                            @Html.LabelFor(m => m.Email, new { @class = "form-label custom-label" })
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control custom-input" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-4">
+                            @Html.LabelFor(m => m.Password, new { @class = "form-label custom-label" })
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control custom-input" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-4">
+                            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "form-label custom-label" })
+                            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control custom-input" })
+                            @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <input type="submit" value="Register" class="btn btn-primary btn-lg custom-btn" />
+                        </div>
+                    }
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<style>
+    body {
+        background: linear-gradient(to right, #2c3e50, #34495e);
+        color: #ecf0f1;
+    }
+
+    .custom-card {
+        background-color: #34495e;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .custom-card:hover {
+            background-color: #2c3e50;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+    .custom-label {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #ecf0f1;
+    }
+
+    .custom-input {
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 1rem;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        border: 1px solid #7f8c8d;
+        transition: background-color 0.3s ease;
+    }
+
+        .custom-input:hover {
+            background-color: #34495e;
+            border-color: #1abc9c;
+        }
+
+    .custom-btn {
+        background-color: #1abc9c;
+        color: #fff;
+        border-radius: 25px;
+        font-weight: bold;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+        .custom-btn:hover {
+            background-color: #16a085;
+            transform: scale(1.05);
+        }
+</style>
